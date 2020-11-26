@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                 <!-- Start of Head Section -->
+  <title>Buy Now</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="buynow.css">
+    <script src="buynow.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=auto">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">   <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">                                       <!--Favicon End-->
+
+</head>                                                   <!-- End of Head Section -->
+<body>                                                    <!-- Body of the Page-->
+  <div class="header">                                    <!--Navigation Section-->
+    <a href="homepage.html">Home</a>
+    <a href="typesofTea.html">Types of Tea</a>
+    <a href="manufacturerPage.html">Tea Manufacturers</a>
+    <a class="active" href="buyNow.html">Buy Now</a>
+    <a href="contactuspage.html">Contact Us</a>
+  </div>                                                 <!--End of Navigation Section-->
+    <div class="heading-homepage">                           <!-- Heading of Web Page-->
+      <header>
+        <h1 class="main">Ceylon Tea</h1>
+        <p class="mainpara">Ordering & Prices</p>
+      </header>
+    </div>                                                    <!-- End of Heading -->
+      <p align="center">
+      <br><b>YOU CAN ORDER CEYLON TEA PRODUCTS FROM BELOW FOR THE MOST REASONABLE PRICES AND QUALITY WHICH IS CERTIFIED BY THE SRILANKAN TEA BOARD.</b><br><br></p>
+
+       <div class="container">
+        <form action="/action_page.php">
+          <label for="teamanufacturer">Tea Manufacturer of Ordering Product/s</label>
+          <select id="manufacturer" name="manufacturer" onchange="changemanufacture()">
+           <option value="dilmaceylonteacompany">Dilma Ceylon Tea Company (LKR 1000)</option>
+           <option value="afjonestea">AF Jones Tea (LKR 1500)</option>
+           <option value="georgestuartteas">George Steuart Teas (LKR 1000)</option>
+           <option value="prestigeceylonteaspvtltd">Prestige Ceylon Teas(Pvt)Limited (LKR 1000)</option>
+           <option value="malwattevalleyplantationsplc">Malwatte Valley Plantations Plc (LKR 2000)</option>
+           <option value="empireteas">Empire Tea (LKR 2000)</option>    
+           </select>
+
+          <label for="packagingtype">Preferred Packaging Type</label>
+           <select id="packagingtype" name="packagingtype" onchange="packagingtype()">
+            <option value="tinsdefault">Tins-DEFAULT (LKR 5000)</option>
+            <option value="paperpouches">Paper Pouches (LKR 1000)</option>
+            <option value="bags">Bags (LKR 2500)</option>
+            </select>
+
+          <label for="size">Preferred Size</label>
+            <select id="size" name="size" onchange="size()">
+             <option value="mediumdefault">Medium-DEFAULT (LKR 2500)</option>
+             <option value="small">Small (LKR 1000)</option>
+             <option value="large">Large (LKR 5000)</option>     
+             </select>
+
+          <label for="size">Complimentary Items( Extras )</label>
+          <select id="extras" name="extras" onchange="extras()">
+            <option value="mug">Mug (LKR 500)</option>
+            <option value="silverpin">Silver Pin (LKR 1000)</option>
+            <option value="woodensouvenir">Wooden Souvenir (LKR 1500)</option>    
+            </select> 
+        </form>
+      </div><br>
+      <div style="overflow-x:auto">
+      <table>
+        <tr></tr>
+        <tr><a class="order" type="submit" value="orderfavourite" onclick="orderfavourite()">Order Favourite</a></tr>
+        <tr><a class="order" type="submit" value="addorderasafavourite" onclick="addorderasafavourite()">Add Order as a Favourite</a></tr>  
+        <tr><a class="order" type="submit" value="placeorder" onclick="placeorder()">Place Order</a></tr>
+          <tr><a class="order" type="submit" value="addtoorder" onclick="addtoorder()">Add to Order</a></tr>
+          
+          
+          <tr><a class="order" type="submit" value="checkloyaltypoints" onclick="checkloyaltypoints()">Check Loyalty Points</a></tr>
+      </table></div>
+      <h2>Order Summary</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <tr>
+            <td for="orderprice" id="teamanufac">Current Tea Order :</td>
+            <td>prie of roder</td>
+          </tr>
+          <tr>
+            <td for="orderprice">Cost of Current Tea Order :</td>
+            <td>cocr</td>
+          </tr>
+          <tr>
+            <td for="orderprice">Overall Order :</td>
+            <td>orn</td>
+          </tr>
+          <tr>
+          <td for="orderprice">Cost of your Overall Order :</td>
+          <td>coyor</td>
+          </tr><br>
+          <tr>
+          <td for="orderprice">Loyalty Points :</td>
+          <td>LP</td>
+          </tr>
+        </table>
+      </div>
+
+      <!--Form End-->
+      <footer class="footer">                                      <!-- Footer of Page--> 
+        <p>Ceylon Tea 2020 © All Right Reserved. Designed by Dilan Jude  | 071 019 3675<br>
+        <a href="mailto:cb008784@students.apiit.lk">For More Info</a></p>
+      </footer>                                                    <!--End of Footer-->
+</body>                                                        <!-- Closing the Body -->
+</html>
+
+

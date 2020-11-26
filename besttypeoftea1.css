@@ -1,0 +1,143 @@
+/* Navigation Menu */
+.header a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.header a:hover {
+  background-color:black;
+  color: lightskyblue;
+}
+.header a.active {
+  background-color:black;
+  color: lightblue;
+}
+
+/* Heading*/
+.heading-homepage {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color :rgb(8, 8, 8);
+  font-size: 22px;
+}
+h1.main{
+color:#121312;
+}
+p.mainpara{
+color:#121312;
+}
+.button {
+padding:.8em;
+background-color :#0c0b0b;
+color:#f6d2d6;
+text-transform:uppercase;
+text-decoration: none;
+display:block;
+margin: .8em auto .8em 0;
+width:100px;
+}
+/*Heading end*/
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  color: black;
+}
+
+body {
+  background-color: #f6d2d6;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3.visacurren
+{
+ color: black;
+ display: block;
+ text-align: center;
+}
+/* Styling for Table*/
+
+.table {
+  
+  width: 100%;    
+  margin-left:auto; 
+  margin-right:auto;
+  background-color: black;
+  border: 2px solid black;
+}
+table,th,td {
+        table-layout: fixed;
+        width:75%;
+        border-collapse: collapse;
+        max-width: width 75%;
+    }
+th {
+         border: 2px solid black;
+        letter-spacing: 2px;
+    }
+    td {
+      border: 2px solid black;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    tfoot td {
+        text-align: center;
+    }
+    thead,tfoot{
+      align-content: center;
+
+    }
+    tr:nth-of-type(2n){
+      border: 2px solid black;
+        background: lightskyblue;
+    }
+
+    mark { 
+      background-color: lightblue;
+      color: black;
+    }
+    section{
+      border:8px solid rgb(22, 139, 179);
+      margin:10px;
+      padding:5px;
+  }
+
+  section.last{
+      background-color: lightblue;
+      margin:10px;    
+      padding:5px;
+  }
+ 
+
+  .button23 {
+      background-color:green;
+      border: 3px;
+      border-color: black;
+      color: white;
+      padding: 16px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+/*Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#f6d2d6;
+  color: rgb(0, 0, 0);  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+/* End of Footer */

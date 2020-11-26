@@ -1,0 +1,183 @@
+/*Styling for Navigation Menu */
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-family: "Century Gothic",Georgia, 'Times New Roman', Times, serif;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  width: 20%;
+}
+.header a:hover {
+  background-color:#FF5765;
+  color: black;
+}
+.header a.active {
+  background-color:#FF5765;
+  color: white;
+}
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.header-right {
+  float: none;
+}}
+/*End of Styling for Navigation Menu */
+
+
+/* Text and Body Color */
+  body {
+    margin: 0;
+    background-color:#FF5765;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/* End of Text and Body Color */
+
+
+/* Heading*/
+  .heading-homepage {
+        display: block;
+        text-align: center;
+        padding: 32px;
+        color :rgb(8, 8, 8);
+        font-size: 22px;
+        background-color:#FF2768;
+  }
+  h1.main{
+    color:black;
+  }
+  p.mainpara{
+    color:black;
+  }
+  h2.manufacture{
+    color: black;
+    text-align: center;
+  }
+/* Heading End */  
+
+/* Description Styling */
+* {
+  box-sizing:border-box;
+}
+
+.container {
+  padding: 64px;
+}
+.container2 {
+  padding: 64px;
+  background-color: #f1f1f1;
+}
+
+.row:after {
+  display: table;
+  content: "";
+  clear: both
+}
+
+.columnright {
+  float: left;
+  padding: 20px;
+  width: 66.6666%;
+}
+
+.columnleft {
+  float: left;
+  width: 33.3333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:#cb8434;
+  padding:.8em;
+  text-transform:uppercase;
+  text-decoration: none;
+  display:block;
+  width:140px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66, .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+/*Styling for the Table in Descriptions */
+
+table {
+  border-collapse: collapse;
+  width: 100%;  
+}
+
+table td, table th{
+  border: 3px solid #1B4A56;
+  text-align:center;
+  align-items: center;
+  padding: 8px;
+}
+table tr:hover {
+  background-color:whitesmoke;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:center;
+  background-color:#cb8434;
+  color: white;
+}
+
+/* End of styling for tables */
+/*Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#FF5765;
+  color: black;  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+/* End of Footer */

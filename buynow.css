@@ -1,0 +1,161 @@
+/*Styling for Navigation Menu */
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-family: "Century Gothic",Georgia, 'Times New Roman', Times, serif;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  width: 20%;
+}
+
+.header a:hover {
+  background-color: #715C8C;
+  color: black;
+}
+
+.header a.active {
+  background-color:#715C8C;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.header-right {
+  float: none;
+}
+}
+/*End of Styling for Navigation Menu */
+
+
+/* Text and Body Color */
+  body {
+    margin: 0;
+    background-color:#715C8C;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  h2{
+    text-align: center;
+  }
+/* End of Text and Body Color */
+
+
+/* Heading*/
+  .heading-homepage {
+        display: block;
+        text-align: center;
+        padding: 32px;
+        color :rgb(8, 8, 8);
+        font-size: 22px;
+  }
+  h1.main{
+    color:black;
+  }
+  p.mainpara{
+    color:black;
+  }
+/* Heading End */  
+
+/* Image */
+.mainlogo {
+  width: 100%;
+  max-width: width auto;
+  height: auto;
+}
+/* Image End */
+
+/*Form*/
+*{box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 10px solid rgba(74, 203, 235, 0.637);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/*form styling end*/
+
+/*table styling*/
+.container {
+  border-radius: 5px;
+  background-color:#838BC2;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size:18px;
+}
+
+th, td {
+  text-align: justify;
+  padding: 8px;
+}
+
+tr {
+background-color:rgba(53, 157, 184, 0.637);
+}
+/*End of table styling*/
+
+ /*Buttons*/
+
+ .order {
+	background-color:#6a4162;
+	border-radius:28px;
+	border:2px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.order:hover {
+	background-color:rgba(53, 157, 184, 0.637);
+}
+.order:active {
+	position:relative;
+	top:1px;
+}
+
+/*Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#715C8C;
+  color: rgb(255, 255, 255);  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+/* End of Footer */

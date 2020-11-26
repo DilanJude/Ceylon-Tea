@@ -1,0 +1,150 @@
+/*Styling for Navigation Menu */
+* {box-sizing: border-box;}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-family: "Century Gothic",Georgia, 'Times New Roman', Times, serif;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  width: 20%;
+}
+.header a:hover {
+  background-color:#00E2D3;
+  color: black;
+}
+.header a.active {
+  background-color:#00E2D3;
+  color: black;
+}
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.header-right {
+  float: none;
+}
+}
+/*End of Styling for Navigation Menu */
+
+/* Font & Body Styling*/
+  body {
+    margin: 0;
+    background-color:#90CDD0;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/* End of Text and Body Color */
+
+/* Heading Styling*/
+.heading-homepage {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color :rgb(8, 8, 8);
+  font-size: 22px;
+}
+h1.main{
+color:black;
+}
+p.mainpara{
+color:black;
+}
+/* Heading Styling End */  
+
+/* Types of tea section*/
+h2.types{
+  color: black;
+  text-align: center;
+}
+#teasquares {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content : space-between;
+}
+#teasquares .box {
+  margin: .8em .2em ;
+  width: calc(33% - .4em);
+  box-sizing : border-box;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba (0,0,0,0.22);
+  background-color : #00E2D3;
+}
+#teasquares h3, #teasquares p{
+  width:90%;
+  padding :0;
+  margin:1em auto;
+}
+.button {
+  padding:.8em;
+  background-color :#37A6A0;
+  color: rgb(17,17,17);
+  text-transform:uppercase;
+  text-decoration: none;
+  display:block;
+  margin: .8em auto .8em 0;
+  width:100px;
+}
+img{
+  width:500;
+  height:auto;
+  display:block;
+  padding:0;
+  margin:0 auto;
+}
+/*Types of tea section styling end */
+
+/*Styling for the Table */
+#summary {
+  border-collapse: collapse;
+  width: 100%;  
+}
+#summary td, #summary th {
+  border: 3px solid #1B4A56;
+  text-align:center;
+  align-items: center;
+  padding: 8px;
+}
+#summary tr:hover {
+  background-color:#90CDD0;
+}
+#summary th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:center;
+  background-color:#37A6A0;
+  color: white;
+}
+#summary .button {
+  padding:.8em;
+  background-color :#00E2D3;
+  color: rgb(17,17,17);
+  text-decoration: none;
+  display:table-cell;
+  width:auto;
+}
+/*End of styling of table */
+/*Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#00E2D3;
+  color: black;  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+/* End of Footer */

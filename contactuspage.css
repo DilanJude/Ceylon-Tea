@@ -1,0 +1,134 @@
+/*Styling for Navigation Menu */
+* {box-sizing: border-box;}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-family: "Century Gothic",Georgia, 'Times New Roman', Times, serif;
+}
+.header a {
+float: left;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+width: 20%;
+}
+.header a:hover {
+  background-color:#FFDEAD;
+  color: black;
+}
+
+.header a.active {
+  background-color:#FFDEAD;
+  color:black;
+}
+
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.header-right {
+  float: none;
+}
+}
+/*End of Styling for Navigation Menu */
+
+
+/* Text and Body Color */
+  body {
+    margin: 0;
+    padding: 0%;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/* End of Text and Body Color */
+
+
+/* Heading*/
+  .heading-homepage {
+        display: block;
+        text-align: center;
+        padding: 32px;
+        color :rgb(8, 8, 8);
+        font-size: 22px;
+  }
+  h1.main{
+    color:#4dba71;
+  }
+  p.mainpara{
+    color:#4dba71;
+  }
+/* Heading End */  
+
+/* Image */
+.mainlogo {
+  width: 100%;
+  max-width: width auto;
+  height: auto;
+}
+
+/*Form*/
+*{box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-color: #FFDEAD;
+}
+
+ /*Button in Form*/
+
+ .button {
+	background-color:#5cbf2a;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.button:hover {
+	background-color: #f2f2f2;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+/*Footer */
+.footer {
+  text-align: center;
+  margin: 0;
+  padding: 1px;
+  background-color:#FFDEAD;
+  color: black;  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+/* End of Footer */
