@@ -46,7 +46,7 @@
        <div class="container">
         <form action="/action_page.php">
           <label for="teamanufacturer">Tea Manufacturer of Ordering Product/s</label>
-          <select id="manufacturer" name="manufacturer" onchange="changemanufacture()">
+          <select id="manufac" name="type" onchange="manufachange()">
            <option value="dilmaceylonteacompany">Dilma Ceylon Tea Company (LKR 1000)</option>
            <option value="afjonestea">AF Jones Tea (LKR 1500)</option>
            <option value="georgestuartteas">George Steuart Teas (LKR 1000)</option>
@@ -56,21 +56,21 @@
            </select>
 
           <label for="packagingtype">Preferred Packaging Type</label>
-           <select id="packagingtype" name="packagingtype" onchange="packagingtype()">
+           <select id="pack" name="pack" onchange="packchange()">
             <option value="tinsdefault">Tins-DEFAULT (LKR 5000)</option>
             <option value="paperpouches">Paper Pouches (LKR 1000)</option>
             <option value="bags">Bags (LKR 2500)</option>
             </select>
 
           <label for="size">Preferred Size</label>
-            <select id="size" name="size" onchange="size()">
+            <select id="size" name="size" onchange="packssize()">
              <option value="mediumdefault">Medium-DEFAULT (LKR 2500)</option>
              <option value="small">Small (LKR 1000)</option>
              <option value="large">Large (LKR 5000)</option>     
              </select>
 
           <label for="size">Complimentary Items( Extras )</label>
-          <select id="extras" name="extras" onchange="extras()">
+          <select id="extra" name="extra" onchange="packextra()">
             <option value="mug">Mug (LKR 500)</option>
             <option value="silverpin">Silver Pin (LKR 1000)</option>
             <option value="woodensouvenir">Wooden Souvenir (LKR 1500)</option>    
@@ -80,35 +80,35 @@
       <div style="overflow-x:auto">
       <table>
         <tr></tr>
-        <tr><a class="order" type="submit" value="orderfavourite" onclick="orderfavourite()">Order Favourite</a></tr>
-        <tr><a class="order" type="submit" value="addorderasafavourite" onclick="addorderasafavourite()">Add Order as a Favourite</a></tr>  
-        <tr><a class="order" type="submit" value="placeorder" onclick="placeorder()">Place Order</a></tr>
-          <tr><a class="order" type="submit" value="addtoorder" onclick="addtoorder()">Add to Order</a></tr>
+        <tr><a class="order" type="submit" value="Order favourite" onclick="orderfavourite()">Order Favourite</a></tr>
+        <tr><a class="order" type="submit" value="Add to favourite" onclick="addfavourite()">Add Order as a Favourite</a></tr>  
+        <tr><a class="order" type="submit" value="Place Order" onclick="placeorder()">Place Order</a></tr>
+          <tr><a class="order" type="submit" value="Add to Order" onclick="addorder()">Add to Order</a></tr>
           
           
-          <tr><a class="order" type="submit" value="checkloyaltypoints" onclick="checkloyaltypoints()">Check Loyalty Points</a></tr>
+          <tr><a class="order" type="submit" value="checkloyaltypoints" onclick="checkloyaltypoints()">Check Loyalty Points</a></tr>  <!--this button doesn't work-->
       </table></div>
       <h2>Order Summary</h2>
       <div style="overflow-x:auto;">
         <table>
           <tr>
-            <td for="orderprice" id="teamanufac">Current Tea Order :</td>
-            <td>prie of roder</td>
+            <td for="current" id="manufacurrent">Selected Manufacturer Brand:</td>
+            <td for="overall" id="finalprice">Total : 0</td>
           </tr>
           <tr>
-            <td for="orderprice">Cost of Current Tea Order :</td>
-            <td>cocr</td>
+            <td for="current" id="packagecurrent">Package Type :</td>
+            <td for="overall" id="totalorders">No of Order/s you have made : </td>
           </tr>
           <tr>
-            <td for="orderprice">Overall Order :</td>
+            <td for="current" id="packagesize">Package Size :</td>
             <td>orn</td>
           </tr>
           <tr>
-          <td for="orderprice">Cost of your Overall Order :</td>
+          <td for="current" id="packageextra">Extra item/s to be Included in Package :</td>
           <td>coyor</td>
           </tr><br>
           <tr>
-          <td for="orderprice">Loyalty Points :</td>
+          <td for="current" id="totalcurrentcost">Current Order Total : 0 </td>
           <td>LP</td>
           </tr>
         </table>
